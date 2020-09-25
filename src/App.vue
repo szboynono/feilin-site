@@ -6,7 +6,7 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
-  <div class="mt-8">
+  <div class="mt-12">
     footer goes here
   </div>
 </div>
