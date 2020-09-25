@@ -1,22 +1,30 @@
 <template>
 <div class="m-8">
   <div class="grid grid-flow-col grid-cols-3 gap-8 mb-8">
-    <router-link to="/">Home</router-link>
-    <router-link to="/">Work</router-link>
-    <router-link to="/about">About</router-link>
+    <router-link to="/">FEILIN DESIGN</router-link>
+    <router-link to="/">WORK</router-link>
+    <router-link to="/about">ABOUT</router-link>
   </div>
   <router-view/>
-  <div class="mt-12">
-    footer goes here
+  <div class="mt-8 footer">
+    <Footer></Footer>
   </div>
 </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
 }
 </style>
+
+<script>
+import Footer from './components/Footer';
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
