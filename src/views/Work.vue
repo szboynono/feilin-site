@@ -1,10 +1,10 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-3 grid-rows-4 gap-8">
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-1 sm:col-span-12 gallary-item"></div>
-    <div class="gallary-item lg:col-start-3 sm:col-start-2 lg:col-span-1 sm:col-span-12 "></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-1 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
+    <div class="gallary-item lg:col-start-3 sm:col-start-2 lg:col-span-1 sm:col-span-12 " :style="{ backgroundImage: `url(${imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-3 grid-row-1 gap-8 mt-16">
     <div class="col-start-2 col-span-2">
@@ -38,7 +38,6 @@
 <style lang="css">
 .gallary-item {
   height: 510px;
-  background-image: url(http://placekitten.com/800/600);
   background-position: center;
   background-size: cover;
 }
@@ -53,3 +52,21 @@
   }
 }
 </style>
+
+<script>
+import { onMounted, ref } from 'vue'
+import router from '../router'
+export default {
+  setup() {
+    const id = ref('');
+    const imgUrl = ref('');
+    onMounted(() =>  {
+      if(router.currentRoute.value.params.id) {
+        id.value = router.currentRoute.value.params.id;
+        imgUrl.value = router.currentRoute.value.params.imgUrl;
+      }
+    })
+    return {id, imgUrl};
+  }
+}
+</script>
