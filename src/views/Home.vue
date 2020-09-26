@@ -13,8 +13,8 @@
 
 @media only screen and (min-width: 1441px) {
   .gallary-item {
-  height: 27vh;
-}
+    height: 27vh;
+  }
 }
 </style>
 

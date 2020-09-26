@@ -1,8 +1,8 @@
 <template>
 <div class="m-8">
   <div class="grid grid-flow-col grid-cols-3 gap-8 mb-8">
-    <router-link to="/">FEILIN DESIGN</router-link>
-    <router-link to="/">WORK</router-link>
+    <h1><router-link to="/">FEILIN DESIGN</router-link></h1>
+    <router-link to="/work">WORK</router-link>
     <router-link to="/about">ABOUT</router-link>
   </div>
   <router-view/>
