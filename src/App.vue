@@ -1,5 +1,5 @@
 <template>
-  <div class="m-8 flex flex-col justify-between min-h-screen">
+  <div class="m-8 flex flex-col justify-between my-container">
     <div>
       <div class="grid grid-flow-col grid-cols-3 gap-8 mb-8">
         <h1><router-link to="/">FEILIN DESIGN</router-link></h1>
@@ -19,6 +19,10 @@
 #app {
   font-family: "Manrope", sans-serif;
   font-weight: 800;
+}
+
+.my-container {
+  min-height: 95vh;
 }
 </style>
 
