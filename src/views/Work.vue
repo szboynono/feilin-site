@@ -74,10 +74,18 @@ export default {
       return false;
     }
     const onNextClick = () => {
-      // if(id !== 9) {
-      //   router.push({work})
-      // }
-      return false;
+      if(work.value.id !== '9') {
+        let numericId = +work.value.id;
+        numericId++;
+        const nextWork = store.getters.work('' + numericId);
+        router.push({name: 'Work', params: {id: nextWork.id}});
+        work.value = nextWork;
+      } else {
+        const nextWork = store.getters.work('1');
+        router.push({name: 'Work', params: {id: nextWork.id}});
+        work.value = nextWork;
+      }
+      window.scrollTo(0,0);
     }
     return {work, onBackClick, onNextClick};
   }

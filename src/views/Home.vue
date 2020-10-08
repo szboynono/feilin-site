@@ -34,7 +34,7 @@ export default {
     const works = store.getters.works;
     const onImageClick = (id) => {
       if (id) {
-        router.push({ name: "Work", params: { id } });
+        router.push({ name: 'Work', params: { id } });
       }
     };
 
