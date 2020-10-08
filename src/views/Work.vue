@@ -71,7 +71,18 @@ export default {
     })
 
     const onBackClick = () => {
-      return false;
+      if(work.value.id !== '1') {
+        let numericId = +work.value.id;
+        numericId--;
+        const nextWork = store.getters.work('' + numericId);
+        router.push({name: 'Work', params: {id: nextWork.id}});
+        work.value = nextWork;
+      } else {
+        const nextWork = store.getters.work('9');
+        router.push({name: 'Work', params: {id: nextWork.id}});
+        work.value = nextWork;
+      }
+      window.scrollTo(0,0);
     }
     const onNextClick = () => {
       if(work.value.id !== '9') {
