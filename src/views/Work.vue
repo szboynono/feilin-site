@@ -1,13 +1,13 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-3 grid-rows-4 gap-8">
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-1 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
-    <div class="gallary-item lg:col-start-3 sm:col-start-2 lg:col-span-1 sm:col-span-12 " :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-1 sm:col-span-3 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="gallary-item lg:col-start-3 sm:col-start-2 lg:col-span-1 sm:col-span-3 " :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-3 grid-row-1 gap-8 mt-16">
-    <div class="col-start-2 col-span-2">
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3">
       <p class="font-normal">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi, eos
         in optio dolorem accusantium vitae tenetur qui consectetur expedita
@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="grid grid-col-1 lg:grid-cols-3 grid-row-1 gap-8 mt-8">
-    <div class="col-start-2 col-span-2 tags">
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 tags">
       <a href="#" class="font-normal">#logo design</a>
       <a href="#" class="font-normal">#brand design</a>
       <a href="#" class="font-normal">#editorial design</a>
@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="grid grid-col-1 lg:grid-cols-3 grid-row-1 gap-8 mt-16 mb-8">
-    <div class="col-start-2 col-span-2 flex justify-between">
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 flex justify-between">
       <button class="text-2xl" @click="onBackClick">&#8249;</button>
       <button class="text-2xl" @click="onNextClick">&#8250;</button>
     </div>
