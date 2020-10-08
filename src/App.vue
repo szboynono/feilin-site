@@ -2,14 +2,16 @@
   <div class="m-8 flex flex-col justify-between my-container">
     <div>
       <div class="grid grid-flow-col grid-cols-3 gap-8 mb-8">
-        <h1><router-link to="/">FEILIN DESIGN</router-link></h1>
-        <router-link to="/work">WORK</router-link>
+        <h1>FEILIN DESIGN</h1>
+        <router-link to="/">WORK</router-link>
         <router-link to="/about">ABOUT</router-link>
       </div>
       <router-view />
     </div>
     <div class="mt-8 footer">
-      <Footer></Footer>
+      <router-link to="/">
+        <Footer></Footer>
+      </router-link>
     </div>
   </div>
 </template>

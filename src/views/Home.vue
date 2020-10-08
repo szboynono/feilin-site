@@ -26,49 +26,12 @@
 
 <script>
 import router from "../router";
+import store from "@/store";
 
 export default {
   name: "Home",
   setup() {
-    const works = [
-      {
-        id: "pig",
-        imgUrl: "https://loremflickr.com/800/600/pig",
-      },
-      {
-        id: "cat",
-        imgUrl: "https://loremflickr.com/800/600/cat",
-      },
-      {
-        id: "dog",
-        imgUrl: "https://loremflickr.com/800/600/dog",
-      },
-      {
-        id: "lion",
-        imgUrl: "https://loremflickr.com/800/600/lion",
-      },
-      {
-        id: "fish",
-        imgUrl: "https://loremflickr.com/800/600/fish",
-      },
-      {
-        id: "horse",
-        imgUrl: "https://loremflickr.com/800/600/horse",
-      },
-      {
-        id: "gun",
-        imgUrl: "https://loremflickr.com/800/600/gun",
-      },
-      {
-        id: "girl",
-        imgUrl: "https://loremflickr.com/800/600/girl",
-      },
-      {
-        id: "apple",
-        imgUrl: "https://loremflickr.com/800/600/bird",
-      },
-    ];
-
+    const works = store.getters.works;
     const onImageClick = (id) => {
       if(id) {
         router.push({ name: "Work", params: { id, imgUrl: works.find(work => work.id === id).imgUrl } });
@@ -76,8 +39,8 @@ export default {
     };
 
     return {
-      works,
       onImageClick,
+      works
     };
   },
 };
