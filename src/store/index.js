@@ -42,7 +42,8 @@ const state = {
 }
 
 const getters = {
-  works: state => state.works
+  works: state => state.works,
+  work: state => id => state.works.find(work => work.id === id)
 }
 
 const store = createStore({

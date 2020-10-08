@@ -1,10 +1,10 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-3 grid-rows-4 gap-8">
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-1 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
-    <div class="gallary-item lg:col-start-3 sm:col-start-2 lg:col-span-1 sm:col-span-12 " :style="{ backgroundImage: `url(${imgUrl})` }"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
-    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-1 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="gallary-item lg:col-start-3 sm:col-start-2 lg:col-span-1 sm:col-span-12 " :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
+    <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-12 gallary-item" :style="{ backgroundImage: `url(${work.imgUrl})` }"></div>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-3 grid-row-1 gap-8 mt-16">
     <div class="col-start-2 col-span-2">
@@ -29,8 +29,8 @@
   </div>
   <div class="grid grid-col-1 lg:grid-cols-3 grid-row-1 gap-8 mt-16 mb-8">
     <div class="col-start-2 col-span-2 flex justify-between">
-      <button class="text-2xl">&#8249;</button>
-      <button class="text-2xl">&#8250;</button>
+      <button class="text-2xl" @click="onBackClick">&#8249;</button>
+      <button class="text-2xl" @click="onNextClick">&#8250;</button>
     </div>
   </div>
 </template>
@@ -56,17 +56,30 @@
 <script>
 import { onMounted, ref } from 'vue'
 import router from '../router'
+import store from "@/store";
+
 export default {
   setup() {
-    const id = ref('');
-    const imgUrl = ref('');
+    const work = ref({
+      id: '',
+      imgUrl: ''
+    });
     onMounted(() =>  {
       if(router.currentRoute.value.params.id) {
-        id.value = router.currentRoute.value.params.id;
-        imgUrl.value = router.currentRoute.value.params.imgUrl;
+        work.value = store.getters.work(router.currentRoute.value.params.id);
       }
     })
-    return {id, imgUrl};
+
+    const onBackClick = () => {
+      return false;
+    }
+    const onNextClick = () => {
+      // if(id !== 9) {
+      //   router.push({work})
+      // }
+      return false;
+    }
+    return {work, onBackClick, onNextClick};
   }
 }
 </script>
