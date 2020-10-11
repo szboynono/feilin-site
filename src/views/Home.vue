@@ -4,43 +4,46 @@
       class="gallary-item"
       v-for="work in works"
       :key="work.id"
-      :style="{ backgroundImage: `url(${work.imgUrl})` }"
       @click="onImageClick(work.id)"
-    ></div>
+    >
+      <img :src="work.homeImg.url" :alt="work.homeImg.alt" />
+    </div>
   </div>
 </template>
 <style lang="css" scoped>
 .gallary-item {
-  height: 26vh;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
 
 @media only screen and (min-width: 1441px) {
-  .gallary-item {
-    height: 27vh;
-  }
 }
 </style>
 
 <script>
 import router from "../router";
 import store from "@/store";
+import { onMounted, ref } from "vue";
 
 export default {
   name: "Home",
   setup() {
     const works = store.getters.works;
+    const url = ref('../assets/images/mattamy/logo-1.png');
+    onMounted(() => {
+      console.log(works);
+    });
     const onImageClick = (id) => {
       if (id) {
-        router.push({ name: 'Work', params: { id } });
+        router.push({ name: "Work", params: { id } });
       }
     };
 
     return {
       onImageClick,
       works,
+      url
     };
   },
 };

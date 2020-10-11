@@ -4,39 +4,73 @@ const state = {
   works: [
     {
       id: "1",
-      imgUrl: "https://loremflickr.com/800/600/pig",
+      homeImg: {
+        url: require("../assets/images/mattamy/logo-1.png"),
+        alt: 'mattamy1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/mattamy/logo-1.png"),
+          alt: 'mattamy-work-1'
+        },
+        {
+          url: require("../assets/images/mattamy/logo-2.png"),
+          alt: 'mattamy-work-2'
+        },
+        {
+          url: require("../assets/images/mattamy/logo-collection.png"),
+          alt: 'mattamy-work-3'
+        },
+        {
+          url: require("../assets/images/mattamy/poster.png"),
+          alt: 'mattamy-work-4'
+        },
+        {
+          url: require("../assets/images/mattamy/card.png"),
+          alt: 'mattamy-work-5'
+        },
+        {
+          url: require("../assets/images/mattamy/business-card.png"),
+          alt: 'mattamy-work-6'
+        },
+        {
+          url: require("../assets/images/mattamy/website-1.png"),
+          alt: 'mattamy-work-7'
+        },
+        {
+          url: require("../assets/images/mattamy/website-2.png"),
+          alt: 'mattamy-work-8'
+        }
+      ]
     },
     {
       id: "2",
-      imgUrl: "https://loremflickr.com/800/600/cat",
-    },
-    {
-      id: "3",
-      imgUrl: "https://loremflickr.com/800/600/dog",
-    },
-    {
-      id: "4",
-      imgUrl: "https://loremflickr.com/800/600/lion",
-    },
-    {
-      id: "5",
-      imgUrl: "https://loremflickr.com/800/600/fish",
-    },
-    {
-      id: "6",
-      imgUrl: "https://loremflickr.com/800/600/horse",
-    },
-    {
-      id: "7",
-      imgUrl: "https://loremflickr.com/800/600/gun",
-    },
-    {
-      id: "8",
-      imgUrl: "https://loremflickr.com/800/600/girl",
-    },
-    {
-      id: "9",
-      imgUrl: "https://loremflickr.com/800/600/bird",
+      homeImg: {
+        url: require("../assets/images/mattamy/logo-2.png"),
+        alt: 'mattamy1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/mattamy/logo-1.png"),
+          alt: 'mattamy2'
+        },
+        {
+          url: require("../assets/images/mattamy/logo-collection.png"),
+          alt: 'mattamy3'
+        },
+        {
+          url: require("../assets/images/mattamy/poster.png"),
+          alt: 'mattamy4'
+        },
+        {
+          url: require("../assets/images/mattamy/website-1.png"),
+          alt: 'mattamy5'
+        },
+        {
+          url: require("../assets/images/mattamy/website-2.png"),
+          alt: 'mattamy6'
+        }
+      ]
     },
   ]
 }
