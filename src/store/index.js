@@ -121,6 +121,55 @@ const state = {
         },
       ]
     },
+    {
+      id: "4",
+      homeImg: {
+        url: require("../assets/images/burnbrae-egg/thumbnail-0.png"),
+        alt: 'burnbrae-egg1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/burnbrae-egg/single-front-1.jpg"),
+          alt: 'burnbrae-egg2'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/single-side-2.jpg"),
+          alt: 'burnbrae-egg3'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/single-side-3.jpg"),
+          alt: 'burnbrae-egg4'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/single-open-4.jpg"),
+          alt: 'burnbrae-egg5'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/single-dieline-5.jpg"),
+          alt: 'burnbrae-egg6'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/three-front-6.jpg"),
+          alt: 'burnbrae-egg7'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/three-side-7.jpg"),
+          alt: 'burnbrae-egg9'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/three-stuck-8.jpg"),
+          alt: 'burnbrae-egg10'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/three-open-9.jpg"),
+          alt: 'burnbrae-egg11'
+        },
+        {
+          url: require("../assets/images/burnbrae-egg/three-open-10.jpg"),
+          alt: 'burnbrae-egg12'
+        },
+      ]
+    },
   ]
 }
 
