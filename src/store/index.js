@@ -84,6 +84,43 @@ const state = {
         }
       ]
     },
+    {
+      id: "3",
+      homeImg: {
+        url: require("../assets/images/mischief/1-logo.png"),
+        alt: 'mischief1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/mischief/1-logo.png"),
+          alt: 'mischief2'
+        },
+        {
+          url: require("../assets/images/mischief/2-card.png"),
+          alt: 'mischief3'
+        },
+        {
+          url: require("../assets/images/mischief/3-card.png"),
+          alt: 'mischief4'
+        },
+        {
+          url: require("../assets/images/mischief/4-stationary.png"),
+          alt: 'mischief5'
+        },
+        {
+          url: require("../assets/images/mischief/5-poster.png"),
+          alt: 'mischief6'
+        },
+        {
+          url: require("../assets/images/mischief/6-tape.png"),
+          alt: 'mischief7'
+        },
+        {
+          url: require("../assets/images/mischief/7-website.png"),
+          alt: 'mischief8'
+        },
+      ]
+    },
   ]
 }
 
