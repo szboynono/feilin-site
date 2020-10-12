@@ -51,7 +51,7 @@ const state = {
       },
       workImgs: [
         {
-          url: require("../assets/images/mattamy/logo-1.png"),
+          url: require("../assets/images/mattamy/logo-2.png"),
           alt: 'mattamy2'
         },
         {
