@@ -87,7 +87,7 @@ const state = {
     {
       id: "3",
       homeImg: {
-        url: require("../assets/images/mischief/1-logo.png"),
+        url: require("../assets/images/mischief/5-poster.png"),
         alt: 'mischief1'
       },
       workImgs: [
@@ -168,6 +168,56 @@ const state = {
           url: require("../assets/images/burnbrae-egg/three-open-10.jpg"),
           alt: 'burnbrae-egg12'
         },
+      ]
+    },
+    {
+      id: "5",
+      homeImg: {
+        url: require("../assets/images/sap/1-logo.png"),
+        alt: 'sap1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/sap/1-logo.png"),
+          alt: 'sap2'
+        },
+        {
+          url: require("../assets/images/sap/2-bottle.png"),
+          alt: 'sap3'
+        },
+        {
+          url: require("../assets/images/sap/3-postal-card.png"),
+          alt: 'sap4'
+        },
+        {
+          url: require("../assets/images/sap/4-postal-card.png"),
+          alt: 'sap5'
+        }
+      ]
+    },
+    {
+      id: "6",
+      homeImg: {
+        url: require("../assets/images/cracker/0-thumbnail.png"),
+        alt: 'cracker1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/cracker/1-before-after.png"),
+          alt: 'cracker2'
+        },
+        {
+          url: require("../assets/images/cracker/2-crackers.png"),
+          alt: 'cracker3'
+        },
+        {
+          url: require("../assets/images/cracker/3-crackers.png"),
+          alt: 'cracker4'
+        },
+        {
+          url: require("../assets/images/cracker/4-all.png"),
+          alt: 'cracker5'
+        }
       ]
     },
   ]
