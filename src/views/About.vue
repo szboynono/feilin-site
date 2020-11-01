@@ -5,7 +5,7 @@
     >
       Feilin Fu is a graphic designer based out of Toronto, currently working as a full-time designer at No Fixed Address. She is a passionate designer who is truly committed to the craft and execution of beautiful, considered typography and design. As a designer, Feilin spreads her talents across a wide variety of creative disciplines, including new brand lunch, corporate identity, editorial design, market collateral, package design and some digital executions, and more.
     </div>
-    <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
+    <div class="col-start-2 col-span-2">
       <about-content :showContent="contentState[0]" :contentId='0' @title-clicked="onTitleClick">
         <template #header> EXPERIENCE </template>
         <template #content>
@@ -28,7 +28,7 @@
         </template>
       </about-content>
     </div>
-    <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
+    <div class="col-start-2 col-span-2">
       <about-content :showContent="contentState[1]" :contentId='1' @title-clicked="onTitleClick">
         <template #header> AWARDS & RECONGNITION </template>
         <template #content>
@@ -62,7 +62,7 @@
         </template>
       </about-content>
     </div>
-    <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
+    <div class="col-start-2 col-span-2">
       <about-content :showContent="contentState[2]" :contentId='2' @title-clicked="onTitleClick">
         <template #header> PUBLICATIONS </template>
         <template #content>
@@ -75,7 +75,7 @@
         </template>
       </about-content>
     </div>
-    <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
+    <div class="col-start-2 col-span-2">
       <about-content :showContent="contentState[3]" :contentId='3' @title-clicked="onTitleClick">
         <template #header> SELECT CLIENTS </template>
         <template #content>
@@ -85,7 +85,7 @@
         </template>
       </about-content>
     </div>
-    <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
+    <div class="col-start-2 col-span-2">
       <about-content :showContent="contentState[4]" :contentId='4' @title-clicked="onTitleClick">
         <template #header> CONTACT </template>
         <template #content>
