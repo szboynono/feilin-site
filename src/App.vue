@@ -1,5 +1,5 @@
 <template>
-  <div class="m-8 flex flex-col justify-between my-container">
+  <div class="mx-auto my-8 px-8 flex flex-col justify-between my-container">
     <div>
       <div class="grid grid-flow-col grid-cols-3 gap-8 mb-8">
         <h1>FEILIN DESIGN</h1>
@@ -25,7 +25,7 @@
 
 .my-container {
   min-height: 95vh;
-  width: 100vw;
+  max-width: 2560px;
 }
 </style>
 
