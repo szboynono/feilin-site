@@ -18,7 +18,7 @@
       <img :src="work.workImg3.url" :alt="work.workImg3.alt" />
     </div> -->
   </div>
-  <div class="grid grid-cols-1 lg:grid-cols-3 grid-row-1 gap-8 mt-16">
+  <!-- <div class="grid grid-cols-1 lg:grid-cols-3 grid-row-1 gap-8 mt-16">
     <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3">
       <p class="font-normal">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi, eos
@@ -30,7 +30,7 @@
         labore modi corporis!
       </p>
     </div>
-  </div>
+  </div> -->
   <!-- <div class="grid grid-col-1 lg:grid-cols-3 grid-row-1 gap-8 mt-8">
     <div class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 tags">
       <a href="#" class="font-normal">#logo design</a>
