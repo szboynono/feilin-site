@@ -25,6 +25,7 @@
 
 .my-container {
   min-height: 95vh;
+  width: 100vw;
 }
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="about grid grid-col-1 lg:grid-cols-3 grid-row-5 gap-8">
+  <div class="about grid grid-col-1 lg:grid-cols-3 gap-8">
     <div
       class="col-start-2 col-span-2 text-3xl font-normal border-b-2 border-gray-900 pb-8"
     >
@@ -16,20 +16,20 @@
         <template #header> EXPERIENCE </template>
         <template #content>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>No Fixed Address (NFA) - January 2020 - Present</p>
+            <p>Designer</p>
           </div>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>Grip Limited – May 2018 - January 2020</p>
+            <p>Junior Designer</p>
           </div>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>良品设计 (CGI) - May 2017 - August 2017</p>
+            <p>Graphic Designer</p>
           </div>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>OCAD University - September 2016 - May 2017</p>
+            <p>Editorial Designer</p>
           </div>
         </template>
       </about-content>
@@ -39,66 +39,64 @@
         <template #header> AWARDS & RECONGNITION </template>
         <template #content>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>Creative Report Card Ranked #61 Designer - 2020</p>
           </div>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>ADCC Sliver - 2019</p>
           </div>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>ADCC Sliver - 2019</p>
           </div>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>Communication Arts Finalist - 2019</p>
+          </div>
+          <div class="mt-8">
+            <p>Strategy Online Marketing Awards Merit - 2019</p>
+          </div>
+          <div class="mt-8">
+            <p>Benjamin Franklin Award - 2019</p>
+          </div>
+          <div class="mt-8">
+            <p>Trudell Medical Packaging Finalist - 2018</p>
+          </div>
+          <div class="mt-8">
+            <p>ADCC Merit - 2018</p>
+          </div>
+          <div class="mt-8">
+            <p>ADCC Merit - 2017</p>
           </div>
         </template>
       </about-content>
     </div>
     <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
       <about-content :showContent="contentState[2]" :contentId='2' @title-clicked="onTitleClick">
-        <template #header> SELECT CLIENTS </template>
+        <template #header> PUBLICATIONS </template>
         <template #content>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>Applied Arts Magazine - 2019</p>
           </div>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
-          </div>
-          <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
-          </div>
-          <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>Communication Arts - 2019</p>
           </div>
         </template>
       </about-content>
     </div>
     <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
       <about-content :showContent="contentState[3]" :contentId='3' @title-clicked="onTitleClick">
+        <template #header> SELECT CLIENTS </template>
+        <template #content>
+          <div class="mt-8">
+            <p>Acura / Aurora Cannabis / Allergan / Dare / Dairy Farmers of Ontario / J.P.Wisers / KFC / Lindt / Medreleaf / Mattamy Homes / Queenston Mile Vineyard / RBC / Grip Sound+Picture</p>
+          </div>
+        </template>
+      </about-content>
+    </div>
+    <div class="col-start-2 col-span-2 border-b-2 border-gray-900 pb-8">
+      <about-content :showContent="contentState[4]" :contentId='4' @title-clicked="onTitleClick">
         <template #header> CONTACT </template>
         <template #content>
           <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
-          </div>
-          <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
-          </div>
-          <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
-          </div>
-          <div class="mt-8">
-            <p>Freelance - 2017 - Present</p>
-            <p>Senior Designer</p>
+            <p>Email: feilinfu729@gmail.com</p>
           </div>
         </template>
       </about-content>
