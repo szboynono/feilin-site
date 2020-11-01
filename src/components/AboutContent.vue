@@ -1,29 +1,35 @@
 <template>
-  <header @click="headerClick" class="border-b-2 border-gray-900 pb-8">
+  <header @click="headerClick" class="border-b-2 border-gray-900 pb-8"
+  >
     <slot name="header"></slot>
   </header>
   <div
     v-if="true"
     class="content font-normal before-animate"
-    :class="{ 'expand border-b-2 border-gray-900 pb-8': showContent }"
+    :class="{ 'expand': showContent }"
   >
     <slot name="content"></slot>
+    <hr class="mt-8">
   </div>
 </template>
 
 <style lang="css">
 header {
   cursor: pointer;
-  transition: border 0.5s ease;
 }
 .content {
-  transition: all 0.5s ease;
+  transition: max-height .7s ease-in-out;
   height: auto;
   overflow: hidden;
   max-height: 0;
 }
 .expand {
   max-height: 800px;
+}
+hr {
+  border: none;
+  height: 2px;
+  background:  #1a202c;
 }
 </style>
 
