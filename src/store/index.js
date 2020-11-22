@@ -46,48 +46,44 @@ const state = {
     {
       id: "2",
       homeImg: {
-        url: require("../assets/images/aurora/poster-6.png"),
+        url: require("../assets/images/aurora/4-letterhead.png"),
         alt: 'aurora1'
       },
       workImgs: [
         {
-          url: require("../assets/images/aurora/logo-1.png"),
+          url: require("../assets/images/aurora/1-logo.gif"),
           alt: 'aurora2'
         },
         {
-          url: require("../assets/images/aurora/logo-2.gif"),
+          url: require("../assets/images/aurora/2-logo.png"),
           alt: 'aurora3'
         },
         {
-          url: require("../assets/images/aurora/logo-3.png"),
+          url: require("../assets/images/aurora/3-card.png"),
           alt: 'aurora4'
         },
         {
-          url: require("../assets/images/aurora/logo-4.png"),
+          url: require("../assets/images/aurora/4-letterhead.png"),
           alt: 'aurora5'
         },
         {
-          url: require("../assets/images/aurora/business-card-5.png"),
+          url: require("../assets/images/aurora/5-folder.png"),
           alt: 'aurora6'
         },
         {
-          url: require("../assets/images/aurora/poster-6.png"),
+          url: require("../assets/images/aurora/6-brochure.png"),
           alt: 'aurora7'
         },
         {
-          url: require("../assets/images/aurora/product-7.png"),
+          url: require("../assets/images/aurora/7-packaging.png"),
           alt: 'aurora8'
-        },
-        {
-          url: require("../assets/images/aurora/pen-8.png"),
-          alt: 'aurora9'
         }
       ]
     },
     {
       id: "3",
       homeImg: {
-        url: require("../assets/images/mischief/5-poster.png"),
+        url: require("../assets/images/mischief/9-website-cover.png"),
         alt: 'mischief1'
       },
       workImgs: [
@@ -100,7 +96,7 @@ const state = {
           alt: 'mischief3'
         },
         {
-          url: require("../assets/images/mischief/3-card.png"),
+          url: require("../assets/images/mischief/3-cards.png"),
           alt: 'mischief4'
         },
         {
@@ -108,17 +104,37 @@ const state = {
           alt: 'mischief5'
         },
         {
-          url: require("../assets/images/mischief/5-poster.png"),
+          url: require("../assets/images/mischief/5-tape.png"),
           alt: 'mischief6'
         },
         {
-          url: require("../assets/images/mischief/6-tape.png"),
+          url: require("../assets/images/mischief/6-poster.png"),
           alt: 'mischief7'
         },
         {
-          url: require("../assets/images/mischief/7-website.png"),
+          url: require("../assets/images/mischief/7-poster2.png"),
           alt: 'mischief8'
         },
+        {
+          url: require("../assets/images/mischief/8-website.png"),
+          alt: 'mischief9'
+        },
+        {
+          url: require("../assets/images/mischief/9-website-cover.png"),
+          alt: 'mischief10'
+        },
+        {
+          url: require("../assets/images/mischief/10-website.png"),
+          alt: 'mischief11'
+        },
+        {
+          url: require("../assets/images/mischief/11-website.png"),
+          alt: 'mischief12'
+        },
+        {
+          url: require("../assets/images/mischief/12-tshirt.png"),
+          alt: 'mischief13'
+        }
       ]
     },
     {
@@ -217,6 +233,68 @@ const state = {
         {
           url: require("../assets/images/cracker/4-all.png"),
           alt: 'cracker5'
+        }
+      ]
+    },
+    {
+      id: "7",
+      homeImg: {
+        url: require("../assets/images/astellas/5-ad-cover.png"),
+        alt: 'astellas1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/astellas/1-logo.png"),
+          alt: 'astellas2'
+        },
+        {
+          url: require("../assets/images/astellas/2-hotel.png"),
+          alt: 'astellas3'
+        },
+        {
+          url: require("../assets/images/astellas/3-letterhead.png"),
+          alt: 'astellas4'
+        },
+        {
+          url: require("../assets/images/astellas/4-card.png"),
+          alt: 'astellas5'
+        },
+        {
+          url: require("../assets/images/astellas/5-ad-cover.png"),
+          alt: 'astellas6'
+        },
+        {
+          url: require("../assets/images/astellas/6-website.png"),
+          alt: 'astellas7'
+        },
+        {
+          url: require("../assets/images/astellas/7-insta.png"),
+          alt: 'astellas8'
+        },
+      ]
+    },
+    {
+      id: "8",
+      homeImg: {
+        url: require("../assets/images/hike-the-rom/1-logo-cover.png"),
+        alt: 'hike-the-rom1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/hike-the-rom/1-logo-cover.png"),
+          alt: 'hike-the-rom2'
+        },
+        {
+          url: require("../assets/images/hike-the-rom/2-mountain.png"),
+          alt: 'hike-the-rom3'
+        },
+        {
+          url: require("../assets/images/hike-the-rom/3-ticket.png"),
+          alt: 'hike-the-rom4'
+        },
+        {
+          url: require("../assets/images/hike-the-rom/4-coming.png"),
+          alt: 'hike-the-rom5'
         }
       ]
     },

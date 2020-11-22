@@ -4,6 +4,7 @@
       v-for="workImg in state.work.workImgs"
       :key="workImg.alt"
       class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 gallary-item"
+      :class="{'gif-treatment': workImg.alt === 'aurora2'}"
     >
       <img :src="workImg.url" alt="" />
     </div>
@@ -57,6 +58,10 @@
 
 .gallary-item img {
   width: 100%;
+}
+.gif-treatment {
+  padding: 12%;
+  background: #d3d3d3;
 }
 
 .tags a {
