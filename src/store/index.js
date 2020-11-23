@@ -298,6 +298,27 @@ const state = {
         }
       ]
     },
+    {
+      id: "9",
+      homeImg: {
+        url: require("../assets/images/jardin/2-cards-cover.png"),
+        alt: 'jardin1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/jardin/1-logo.png"),
+          alt: 'jardin2'
+        },
+        {
+          url: require("../assets/images/jardin/2-cards-cover.png"),
+          alt: 'jardin3'
+        },
+        {
+          url: require("../assets/images/jardin/3-coming.png"),
+          alt: 'jardin4'
+        },
+      ]
+    },
   ]
 }
 
