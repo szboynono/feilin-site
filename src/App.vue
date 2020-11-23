@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto my-8 px-8 flex flex-col justify-between my-container">
-      <div class="w-56 m-auto" v-if="locked">
+      <div class="w-56 m-auto" v-if="false">
         <label
           class="block text-gray-700 text-sm font-bold mb-2"
           for="password"
