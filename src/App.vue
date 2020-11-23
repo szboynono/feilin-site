@@ -17,7 +17,7 @@
       </div>
     <div v-else>
       <div class="grid grid-flow-col grid-cols-3 gap-8 mb-8">
-        <h1>FEILIN DESIGN</h1>
+        <h1><router-link to="/">FEILIN DESIGN</router-link></h1>
         <router-link to="/">WORK</router-link>
         <router-link to="/about">ABOUT</router-link>
       </div>
