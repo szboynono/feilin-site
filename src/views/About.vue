@@ -3,7 +3,7 @@
     <div
       class="lg:col-start-2 lg:col-span-2 sm:col-start-1 sm:col-span-3 text-3xl leading-9 font-normal border-b-2 border-gray-900 pb-8"
     >
-      Feilin Fu is a graphic designer based out of Toronto, currently working as a full-time designer at No Fixed Address. She is a passionate designer who is truly committed to the craft and execution of beautiful, considered typography and design. As a designer, Feilin spreads her talents across a wide variety of creative disciplines, including new brand lunch, corporate identity, editorial design, market collateral, package design and some digital executions, and more.
+      Feilin Fu is an award-winning graphic designer who graduated from Ontario College of Art and Design University. Currently working as a full-time designer at No Fixed Address. Feilin is a passionate graphic designer who is truly committed to the craft and execution of beautiful, considered typography and design. As a designer, Feilin spreads her talents across a wide variety of creative disciplines, including new or re-branding, corporate identity, editorial design, marketing collateral, packaging design and some digital executions, and more.
     </div>
     <div class="lg:col-start-2 lg:col-span-2 sm:col-start-1 sm:col-span-3">
       <about-content :showContent="contentState[0]" :contentId='0' @title-clicked="onTitleClick">

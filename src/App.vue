@@ -55,7 +55,7 @@ export default {
     const locked = ref(true);
     const password = ref('');
     watchEffect(() => {
-      if(password.value === '2020') {
+      if(password.value === '2021') {
         locked.value = false;
       }
     })
