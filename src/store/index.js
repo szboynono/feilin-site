@@ -4,6 +4,75 @@ const state = {
   works: [
     {
       id: "1",
+      disable: false,
+      homeImg: {
+        url: require("../assets/images/keewatin/Keewatin_6_Cover.jpg"),
+        alt: 'keewatin'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/keewatin/Keewatin_1.jpg"),
+          alt: 'keewatin-work-1'
+        },
+        {
+          url: require("../assets/images/keewatin/Keewatin_2.jpg"),
+          alt: 'keewatin-work-2'
+        },
+        {
+          url: require("../assets/images/keewatin/Keewatin_3.jpg"),
+          alt: 'keewatin-work-3'
+        },
+        {
+          url: require("../assets/images/keewatin/Keewatin_4.jpg"),
+          alt: 'keewatin-work-5'
+        },
+        {
+          url: require("../assets/images/keewatin/Keewatin_5.jpg"),
+          alt: 'keewatin-work-4'
+        },
+        {
+          url: require("../assets/images/keewatin/Keewatin_6_Cover.jpg"),
+          alt: 'keewatin-work-6'
+        },
+      ]
+    },
+    {
+      id: "2",
+      disable: false,
+      homeImg: {
+        url: require("../assets/images/rom-mps/ROM_MPS_5_Cover.jpg"),
+        alt: 'rom-mps'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/rom-mps/ROM_MPS_1.jpg"),
+          alt: 'rom-mps-work-1'
+        },
+        {
+          url: require("../assets/images/rom-mps/ROM_MPS_2.jpg"),
+          alt: 'rom-mps-work-2'
+        },
+        {
+          url: require("../assets/images/rom-mps/ROM_MPS_3.jpg"),
+          alt: 'rom-mps-work-3'
+        },
+        {
+          url: require("../assets/images/rom-mps/ROM_MPS_4.jpg"),
+          alt: 'rom-mps-work-5'
+        },
+        {
+          url: require("../assets/images/rom-mps/ROM_MPS_5_Cover.jpg"),
+          alt: 'rom-mps-work-4'
+        },
+        {
+          url: require("../assets/images/rom-mps/ROM_MPS_6.jpg"),
+          alt: 'rom-mps-work-6'
+        },
+      ]
+    },
+    {
+      id: "3",
+      disable: false,
       homeImg: {
         url: require("../assets/images/mattamy/logo-1.png"),
         alt: 'mattamy1'
@@ -44,7 +113,8 @@ const state = {
       ]
     },
     {
-      id: "2",
+      id: "4",
+      disable: false,
       homeImg: {
         url: require("../assets/images/aurora/4-letterhead.png"),
         alt: 'aurora1'
@@ -81,7 +151,8 @@ const state = {
       ]
     },
     {
-      id: "3",
+      id: "5",
+      disable: false,
       homeImg: {
         url: require("../assets/images/mischief/9-website-cover.png"),
         alt: 'mischief1'
@@ -138,7 +209,8 @@ const state = {
       ]
     },
     {
-      id: "4",
+      id: "6",
+      disable: false,
       homeImg: {
         url: require("../assets/images/burnbrae-egg/thumbnail-0.png"),
         alt: 'burnbrae-egg1'
@@ -187,7 +259,8 @@ const state = {
       ]
     },
     {
-      id: "5",
+      id: "7",
+      disable: false,
       homeImg: {
         url: require("../assets/images/sap/1-logo.png"),
         alt: 'sap1'
@@ -212,7 +285,8 @@ const state = {
       ]
     },
     {
-      id: "6",
+      id: "8",
+      disable: false,
       homeImg: {
         url: require("../assets/images/cracker/0-thumbnail.png"),
         alt: 'cracker1'
@@ -237,7 +311,8 @@ const state = {
       ]
     },
     {
-      id: "7",
+      id: "9",
+      disable: false,
       homeImg: {
         url: require("../assets/images/astellas/5-ad-cover.png"),
         alt: 'astellas1'
@@ -274,7 +349,8 @@ const state = {
       ]
     },
     {
-      id: "8",
+      id: "10",
+      disable: false,
       homeImg: {
         url: require("../assets/images/hike-the-rom/1-logo-cover.png"),
         alt: 'hike-the-rom1'
@@ -299,7 +375,8 @@ const state = {
       ]
     },
     {
-      id: "9",
+      id: "11",
+      disable: false,
       homeImg: {
         url: require("../assets/images/jardin/2-cards-cover.png"),
         alt: 'jardin1'
@@ -317,6 +394,16 @@ const state = {
           url: require("../assets/images/jardin/3-coming.png"),
           alt: 'jardin4'
         },
+      ]
+    },
+    {
+      id: "12",
+      disable: true,
+      homeImg: {
+        url: require("../assets/images/riocan/riocan.jpg"),
+        alt: 'riocan'
+      },
+      workImgs: [
       ]
     },
   ]

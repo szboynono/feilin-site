@@ -2,6 +2,7 @@
   <div class="home grid grid-cols-1 lg:grid-cols-3 grid-rows-3 gap-8">
     <div
       class="gallary-item"
+      :style="{ cursor: isDisabled(work.id) ? 'default' : 'pointer'}"
       v-for="work in works"
       :key="work.id"
       @click="onImageClick(work.id)"
@@ -17,6 +18,12 @@
   cursor: pointer;
 }
 
+.gallary-item-diabled {
+  width: 100%;
+  height: 412px;
+  cursor: default;
+}
+
 @media only screen and (min-width: 1441px) {
 }
 </style>
@@ -24,18 +31,21 @@
 <script>
 import router from "../router";
 import store from "@/store";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 
 export default {
   name: "Home",
   setup() {
     const works = store.getters.works;
     const url = ref('../assets/images/mattamy/logo-1.png');
-    onMounted(() => {
-      console.log(works);
-    });
+
+    const isDisabled = (id) => {
+      const foundWork = works.find(work => work.id === id)
+      return foundWork.disable
+    }
+
     const onImageClick = (id) => {
-      if (id) {
+      if (id && !isDisabled(id)) {
         router.push({ name: "Work", params: { id } });
       }
     };
@@ -43,7 +53,8 @@ export default {
     return {
       onImageClick,
       works,
-      url
+      url,
+      isDisabled
     };
   },
 };
