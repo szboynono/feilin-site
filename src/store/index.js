@@ -74,48 +74,6 @@ const state = {
       id: "3",
       disable: false,
       homeImg: {
-        url: require("../assets/images/mattamy/logo-1.png"),
-        alt: 'mattamy1'
-      },
-      workImgs: [
-        {
-          url: require("../assets/images/mattamy/logo-1.png"),
-          alt: 'mattamy-work-1'
-        },
-        {
-          url: require("../assets/images/mattamy/logo-2.png"),
-          alt: 'mattamy-work-2'
-        },
-        {
-          url: require("../assets/images/mattamy/logo-collection.png"),
-          alt: 'mattamy-work-3'
-        },
-        {
-          url: require("../assets/images/mattamy/card.png"),
-          alt: 'mattamy-work-5'
-        },
-        {
-          url: require("../assets/images/mattamy/poster.png"),
-          alt: 'mattamy-work-4'
-        },
-        {
-          url: require("../assets/images/mattamy/business-card.png"),
-          alt: 'mattamy-work-6'
-        },
-        {
-          url: require("../assets/images/mattamy/website-1.png"),
-          alt: 'mattamy-work-7'
-        },
-        {
-          url: require("../assets/images/mattamy/website-2.png"),
-          alt: 'mattamy-work-8'
-        }
-      ]
-    },
-    {
-      id: "4",
-      disable: false,
-      homeImg: {
         url: require("../assets/images/aurora/4-letterhead.png"),
         alt: 'aurora1'
       },
@@ -151,7 +109,7 @@ const state = {
       ]
     },
     {
-      id: "5",
+      id: "4",
       disable: false,
       homeImg: {
         url: require("../assets/images/mischief/9-website-cover.png"),
@@ -209,7 +167,7 @@ const state = {
       ]
     },
     {
-      id: "6",
+      id: "5",
       disable: false,
       homeImg: {
         url: require("../assets/images/sap/1-logo.png"),
@@ -235,7 +193,7 @@ const state = {
       ]
     },
     {
-      id: "7",
+      id: "6",
       disable: false,
       homeImg: {
         url: require("../assets/images/cracker/0-thumbnail.png"),
@@ -257,6 +215,48 @@ const state = {
         {
           url: require("../assets/images/cracker/4-all.png"),
           alt: 'cracker5'
+        }
+      ]
+    },
+    {
+      id: "7",
+      disable: false,
+      homeImg: {
+        url: require("../assets/images/mattamy/logo-1.png"),
+        alt: 'mattamy1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/mattamy/logo-1.png"),
+          alt: 'mattamy-work-1'
+        },
+        {
+          url: require("../assets/images/mattamy/logo-2.png"),
+          alt: 'mattamy-work-2'
+        },
+        {
+          url: require("../assets/images/mattamy/logo-collection.png"),
+          alt: 'mattamy-work-3'
+        },
+        {
+          url: require("../assets/images/mattamy/card.png"),
+          alt: 'mattamy-work-5'
+        },
+        {
+          url: require("../assets/images/mattamy/poster.png"),
+          alt: 'mattamy-work-4'
+        },
+        {
+          url: require("../assets/images/mattamy/business-card.png"),
+          alt: 'mattamy-work-6'
+        },
+        {
+          url: require("../assets/images/mattamy/website-1.png"),
+          alt: 'mattamy-work-7'
+        },
+        {
+          url: require("../assets/images/mattamy/website-2.png"),
+          alt: 'mattamy-work-8'
         }
       ]
     },
