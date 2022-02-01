@@ -212,6 +212,96 @@ const state = {
       id: "6",
       disable: false,
       homeImg: {
+        url: require("../assets/images/sap/1-logo.png"),
+        alt: 'sap1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/sap/1-logo.png"),
+          alt: 'sap2'
+        },
+        {
+          url: require("../assets/images/sap/2-bottle.png"),
+          alt: 'sap3'
+        },
+        {
+          url: require("../assets/images/sap/3-postal-card.png"),
+          alt: 'sap4'
+        },
+        {
+          url: require("../assets/images/sap/4-postal-card.png"),
+          alt: 'sap5'
+        }
+      ]
+    },
+    {
+      id: "7",
+      disable: false,
+      homeImg: {
+        url: require("../assets/images/cracker/0-thumbnail.png"),
+        alt: 'cracker1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/cracker/1-before-after.png"),
+          alt: 'cracker2'
+        },
+        {
+          url: require("../assets/images/cracker/2-crackers.png"),
+          alt: 'cracker3'
+        },
+        {
+          url: require("../assets/images/cracker/3-crackers.png"),
+          alt: 'cracker4'
+        },
+        {
+          url: require("../assets/images/cracker/4-all.png"),
+          alt: 'cracker5'
+        }
+      ]
+    },
+    {
+      id: "8",
+      disable: false,
+      homeImg: {
+        url: require("../assets/images/astellas/5-ad-cover.png"),
+        alt: 'astellas1'
+      },
+      workImgs: [
+        {
+          url: require("../assets/images/astellas/1-logo.png"),
+          alt: 'astellas2'
+        },
+        {
+          url: require("../assets/images/astellas/2-hotel.png"),
+          alt: 'astellas3'
+        },
+        {
+          url: require("../assets/images/astellas/3-letterhead.png"),
+          alt: 'astellas4'
+        },
+        {
+          url: require("../assets/images/astellas/4-card.png"),
+          alt: 'astellas5'
+        },
+        {
+          url: require("../assets/images/astellas/5-ad-cover.png"),
+          alt: 'astellas6'
+        },
+        {
+          url: require("../assets/images/astellas/6-website.png"),
+          alt: 'astellas7'
+        },
+        {
+          url: require("../assets/images/astellas/7-insta.png"),
+          alt: 'astellas8'
+        },
+      ]
+    },
+    {
+      id: "9",
+      disable: false,
+      homeImg: {
         url: require("../assets/images/burnbrae-egg/thumbnail-0.png"),
         alt: 'burnbrae-egg1'
       },
@@ -259,119 +349,25 @@ const state = {
       ]
     },
     {
-      id: "7",
-      disable: false,
-      homeImg: {
-        url: require("../assets/images/sap/1-logo.png"),
-        alt: 'sap1'
-      },
-      workImgs: [
-        {
-          url: require("../assets/images/sap/1-logo.png"),
-          alt: 'sap2'
-        },
-        {
-          url: require("../assets/images/sap/2-bottle.png"),
-          alt: 'sap3'
-        },
-        {
-          url: require("../assets/images/sap/3-postal-card.png"),
-          alt: 'sap4'
-        },
-        {
-          url: require("../assets/images/sap/4-postal-card.png"),
-          alt: 'sap5'
-        }
-      ]
-    },
-    {
-      id: "8",
-      disable: false,
-      homeImg: {
-        url: require("../assets/images/cracker/0-thumbnail.png"),
-        alt: 'cracker1'
-      },
-      workImgs: [
-        {
-          url: require("../assets/images/cracker/1-before-after.png"),
-          alt: 'cracker2'
-        },
-        {
-          url: require("../assets/images/cracker/2-crackers.png"),
-          alt: 'cracker3'
-        },
-        {
-          url: require("../assets/images/cracker/3-crackers.png"),
-          alt: 'cracker4'
-        },
-        {
-          url: require("../assets/images/cracker/4-all.png"),
-          alt: 'cracker5'
-        }
-      ]
-    },
-    {
-      id: "9",
-      disable: false,
-      homeImg: {
-        url: require("../assets/images/astellas/5-ad-cover.png"),
-        alt: 'astellas1'
-      },
-      workImgs: [
-        {
-          url: require("../assets/images/astellas/1-logo.png"),
-          alt: 'astellas2'
-        },
-        {
-          url: require("../assets/images/astellas/2-hotel.png"),
-          alt: 'astellas3'
-        },
-        {
-          url: require("../assets/images/astellas/3-letterhead.png"),
-          alt: 'astellas4'
-        },
-        {
-          url: require("../assets/images/astellas/4-card.png"),
-          alt: 'astellas5'
-        },
-        {
-          url: require("../assets/images/astellas/5-ad-cover.png"),
-          alt: 'astellas6'
-        },
-        {
-          url: require("../assets/images/astellas/6-website.png"),
-          alt: 'astellas7'
-        },
-        {
-          url: require("../assets/images/astellas/7-insta.png"),
-          alt: 'astellas8'
-        },
-      ]
-    },
-    {
       id: "10",
       disable: false,
       homeImg: {
-        url: require("../assets/images/hike-the-rom/1-logo-cover.png"),
-        alt: 'hike-the-rom1'
+        url: require("../assets/images/tweed/1-logo-cover.gif"),
+        alt: 'tweed1'
       },
       workImgs: [
         {
-          url: require("../assets/images/hike-the-rom/1-logo-cover.png"),
-          alt: 'hike-the-rom2'
+          url: require("../assets/images/tweed/1-logo-cover.gif"),
+          alt: 'tweed2'
         },
         {
-          url: require("../assets/images/hike-the-rom/2-mountain.png"),
-          alt: 'hike-the-rom3'
+          url: require("../assets/images/tweed/2-image.png"),
+          alt: 'tweed3'
         },
         {
-          url: require("../assets/images/hike-the-rom/3-ticket.png"),
-          alt: 'hike-the-rom4'
+          url: require("../assets/images/tweed/3-tbc.png"),
+          alt: 'tweed4'
         },
-        {
-          url: require("../assets/images/hike-the-rom/4-coming.png"),
-          alt: 'hike-the-rom5'
-        }
       ]
     },
     {

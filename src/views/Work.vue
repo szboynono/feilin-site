@@ -101,8 +101,11 @@ export default {
       }
       window.scrollTo(0, 0);
     };
+
     const onNextClick = () => {
-      if (work.value.id !== "9") {
+      const enabledWorks = store.getters.works.filter(work => !work.disable).length;
+
+      if (+work.value.id < enabledWorks) {
         let numericId = +work.value.id;
         numericId++;
         const nextWork = store.getters.work("" + numericId);
