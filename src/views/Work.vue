@@ -6,7 +6,7 @@
       class="lg:col-start-2 sm:col-start-1 lg:col-span-2 sm:col-span-3 gallary-item"
       :class="{'gif-treatment': workImg.alt === 'aurora2'}"
     >
-      <img :src="workImg.url" alt="" />
+      <img :src="workImg.url" alt=""/>
     </div>
     <!-- <div
       class="lg:col-start-2 sm:col-start-1 lg:col-span-1 sm:col-span-3 gallary-item"

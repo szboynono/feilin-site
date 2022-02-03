@@ -7,7 +7,7 @@
       :key="work.id"
       @click="onImageClick(work.id)"
     >
-      <img :src="work.homeImg.url" :alt="work.homeImg.alt" />
+      <img v-show="work.homeImg.loaded" :src="work.homeImg.url" :alt="work.homeImg.alt" @load="load(work)" />
     </div>
   </div>
 </template>
@@ -50,11 +50,16 @@ export default {
       }
     };
 
+    const load = (work) => {
+      store.commit('loadedHomeImage', work.id)
+    }
+
     return {
       onImageClick,
       works,
       url,
-      isDisabled
+      isDisabled,
+      load
     };
   },
 };
